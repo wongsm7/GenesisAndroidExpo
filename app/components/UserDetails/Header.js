@@ -8,14 +8,11 @@ const Header = ({ picture, name }) => {
         <View style={styles.headerContainer}>
             <Image
                 source={{
-                    uri: picture.large, 
-                    headers: {
-                        Accept: '*/*',
-                    },
+                    uri: picture.large
                 }}
                 style={styles.image}
             />
-            <Text>
+            <Text style={styles.name}>
                 {capitalizeFirstLetter(name.first + ' ' + name.last)}
             </Text>
         </View>
