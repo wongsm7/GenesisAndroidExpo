@@ -1,10 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import ContactsStack from './app/config/router'
+import {ContactsStack, Tabs} from './app/config/router'
+import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
   return (
-    <ContactsStack/>
+    <NavigationContainer>
+      <Tabs/>
+    </NavigationContainer>
+    
   );
 }
 
