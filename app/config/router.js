@@ -1,5 +1,4 @@
 import React from 'react';
-import { Platform, Text } from 'react-native'
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -72,7 +71,7 @@ const Tabs = () => {
         headerShown: false
       }}>
       <Tab.Screen
-        name="Contacts"
+        name="Contacts Tab"
         component={ContactsStack}
         options={{
           tabBarLabel: 'Contacts',
@@ -82,7 +81,7 @@ const Tabs = () => {
         }}
       />
       <Tab.Screen
-        name="New Contact"
+        name="New Contact tab"
         component={NewContactStack}
         options={{
           tabBarLabel: 'New Contact',
@@ -95,7 +94,7 @@ const Tabs = () => {
         name="Me"
         component={MeStack}
         options={{
-          tabBarLabel: 'Me',
+          tabBarLabel: 'Me tab',
           tabBarIcon: ({ color, size }) => (
             <Icon name="md-person" color={color} size={size} />
           ),
