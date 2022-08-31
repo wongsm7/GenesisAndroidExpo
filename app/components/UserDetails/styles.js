@@ -39,6 +39,7 @@ export default StyleSheet.create({
         flexDirection: 'column'
     },
     actionLabel: {
+        fontWeight: 'bold',
         fontSize: 12,
         color: colors.subtleText,
         marginBottom: 3
@@ -53,5 +54,8 @@ export default StyleSheet.create({
     },
     actionIcon: {
         marginLeft: 13
+    },
+    infoContainer: {
+        paddingVertical: 15
     }
 })
