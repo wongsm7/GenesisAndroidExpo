@@ -91,10 +91,10 @@ const Tabs = () => {
         }}
       />
       <Tab.Screen
-        name="Me"
+        name="Me tab"
         component={MeStack}
         options={{
-          tabBarLabel: 'Me tab',
+          tabBarLabel: 'Me',
           tabBarIcon: ({ color, size }) => (
             <Icon name="md-person" color={color} size={size} />
           ),
