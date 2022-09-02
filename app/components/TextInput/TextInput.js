@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, TextInput } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons'
 
 import styles from './styles';
 
@@ -10,7 +11,12 @@ class CustomTextInput extends Component {
 
   render() {
     return (
-      <View>
+      <View style={styles.container}>
+        <Icon
+          name={this.props.iconName}
+          size={30}
+          style={styles.icon}
+        />
         <TextInput
           autoCorrect={false}
           autoCapitalize="none"

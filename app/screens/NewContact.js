@@ -7,15 +7,11 @@ import { TextInput } from '../components/TextInput';
 import { PrimaryButton } from '../components/Buttons';
 
 const fields = [
-  { placeholder: 'First Name', stateKey: 'firstName' },
-  { placeholder: 'Last Name', stateKey: 'lastName' },
-  { placeholder: 'Email', stateKey: 'email', keyboardType: 'email-address' },
-  { placeholder: 'Mobile Phone', stateKey: 'mobilePhone' },
-  { placeholder: 'Home Phone', stateKey: 'homePhone' },
-  { placeholder: 'City', stateKey: 'city' },
-  { placeholder: 'Birthday', stateKey: 'birthday' },
-  { placeholder: 'Registered', stateKey: 'registered' },
-  { placeholder: 'Username', stateKey: 'username' },
+  { placeholder: 'Name', stateKey: 'firstName', iconName: "person-outline" },
+  { placeholder: 'Email', stateKey: 'email', keyboardType: 'email-address', iconName: "md-mail-outline" },
+  { placeholder: 'Mobile Phone', stateKey: 'mobilePhone', keyboardType: 'numeric', iconName: "md-call" },
+  { placeholder: 'Home Phone', stateKey: 'homePhone', keyboardType: 'numeric', iconName: "md-call-outline" },
+  { placeholder: 'City', stateKey: 'city', iconName: "md-home-outline" },
 ];
 
 class NewContact extends Component {
