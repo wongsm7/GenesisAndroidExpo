@@ -37,6 +37,9 @@ To export as .apk file, see https://docs.expo.dev/build-reference/apk/. Just cha
   }
 }
 ```
+Then,
+
+`npx eas build --platform android --profile preview`
 
 To export as .aab file, use the default eas.json that was created, for example:
 
@@ -60,3 +63,7 @@ To export as .aab file, use the default eas.json that was created, for example:
   }
 }
 ```
+
+To export as .aab file,
+
+`npx eas build --platform android`
