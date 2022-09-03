@@ -18,7 +18,8 @@ This will send the files to expo and they will build it for you.
 
 To export as .apk file, see https://docs.expo.dev/build-reference/apk/. Just change eas.json to:
 
-```{
+```
+{
   "build": {
     "preview": {
       "android": {
